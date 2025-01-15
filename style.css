@@ -12,7 +12,8 @@
 } 
 .second
 {
-    background-color: rgba(245, 245, 245, 0.842);
+    
+    background-color: rgba(245, 245, 245, 0.938);
     width: 34%;
    height: 67%;
    border-radius: 2%;
@@ -136,13 +137,19 @@
 .fourteen
 {
     
-    margin-left: 41%;
+    margin-left: 39%;
+    height: 10%;
 }
+
+
 
 .fourteen button{
     background-color: #EA4335;
     text-decoration-style: solid double;
     -moz-text-decoration-style: solid double;
+    height: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
 }
 
 .sixteen
@@ -1798,7 +1805,8 @@
 
 
 
-@media (min-width:736px) and (max-width:780px) {
+@media (min-width:736px) and (max-width:780px) 
+{
     .first{
         background-image: url("images/images.jpeg");
         background-size: cover;
@@ -2051,12 +2059,26 @@
         gap: 25px;
         
     }
+
+    .ten i {
+        cursor: pointer;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+    
+    .ten i:hover {
+        transform: scale(1.2);
+    }
     
     .eleven
     {
         margin-top: 3%;
         margin-left: 73%;
     }
+
+    .eleven a:hover {
+        color: #acb6e5;
+    }
+    
     
     
     #insta
@@ -2110,6 +2132,11 @@
         text-decoration-style: solid double;
         -moz-text-decoration-style: solid double;
     }
+    .fourteen button:hover {
+        background: #acb6e5;
+        transform: scale(1.05);
+    }
+    
     
     .sixteen
     {
@@ -2119,10 +2146,15 @@
     }   
 }
 
+@media (max-width: 768px) {
+    .first {
+        width: 90%;
+    }
+}
 
-
-
-
-
-
+@media (max-width: 480px) {
+    .four h2, .six, .thirteen h4 {
+        font-size: 0.9rem;
+    }
+}
 
